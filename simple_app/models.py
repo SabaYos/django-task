@@ -28,3 +28,5 @@ class Employee (models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE, related_name="employees")
     def __str__(self):
         return self.title
+    
+    
